@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,700;1,300&family=Oswald:wght@700&display=swap');
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Oswald', sans-serif; */
+
+
+* { 
+    margin: 0; padding: 0; 
+}
+
+nav{
+    height: 55px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+/* SECTION 1 */
+#background{
+  background-image: url("/assets/mountain-4.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#background::after {
+    content: "";
+    background-image: url("/assets/Layer_627.png");
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.link{
+    /* width: 192px;
+height: 9px; */
+color: #fefeff;
+font-family: 'Lato', sans-serif;
+font-size: 12px;
+font-weight: 400;
+font-style: italic;
+line-height: 20px;
+/* text-align: left; */
+text-transform: uppercase;
+/* font-style: normal; */
+letter-spacing: 1.2px;
+line-height: normal;
+
+}
