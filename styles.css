@@ -138,7 +138,7 @@ nav {
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto;
-	width: 800px;
+	width: 880px;
 }
 .header {
 	display: flex;
@@ -157,6 +157,24 @@ nav {
 	text-transform: uppercase;
 }
 .header-subtitle {
-	display: flex;
-	flex-direction: column;
+	position: relative;
+	left: -25%;
+	margin-top: 90px;
+	color: #414f6b;
+	font-family: "Oswald", sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+	text-align: left;
+	text-transform: uppercase;
+}
+.text {
+	color: #000000;
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+}
+
+#section-two .text {
+	margin: -60px 0 0 80px;
 }
