@@ -180,9 +180,9 @@ nav {
 }
 
 #my-carousel {
-	position: relative;
-	top: 60%;
-	background: #414f6b;
+	position: static;
+	margin-top: 305px;
+	background: rgba(65, 79, 107, 0.8);
 }
 
 .carousel-indicators {
@@ -201,9 +201,13 @@ nav {
 .carousel-image {
 	width: 220px;
 	height: 135px;
-	margin: 0 auto;
+	opacity: 1;
 }
 /* SECTION THREE */
+.nav-three {
+	height: 200px;
+	width: 85% !important;
+}
 #section-three-bg {
 	background-image: url("/assets/mountain-2.png");
 	height: 100vh;
@@ -212,4 +216,11 @@ nav {
 	background-size: cover;
 }
 
-/* #section-three; */
+.nav-bottom {
+	height: 50px;
+	background: #414f6b;
+}
+
+#section-three .text {
+	width: 650px;
+}
