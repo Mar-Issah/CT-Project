@@ -1,53 +1,162 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,700;1,300&family=Oswald:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,700;1,300&family=Oswald:wght@700&display=swap");
 /* font-family: 'Bebas Neue', cursive;
 font-family: 'Lato', sans-serif;
 font-family: 'Oswald', sans-serif; */
 
-
-* { 
-    margin: 0; padding: 0; 
+* {
+	margin: 0;
+	padding: 0;
 }
 
-nav{
-    height: 55px;
-    display: flex;
-    justify-content: space-around;
-    align-items:center;
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.bg {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+	clip: rect(0px, 60px, 200px, 0px);
 }
 
+.con {
+	width: 2533px;
+	height: 1530px;
+}
 /* SECTION 1 */
-#background{
-  background-image: url("/assets/mountain-4.png");
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#section-one {
+	background-image: url("/assets/mountain-4i.png");
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
-#background::after {
-    content: "";
-    background-image: url("/assets/Layer_627.png");
-    opacity: 0.5;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
+#section-one::before {
+	content: "";
+	background: url("/assets/Layer_627.png") center no-repeat;
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
-.link{
-    /* width: 192px;
-height: 9px; */
-color: #fefeff;
-font-family: 'Lato', sans-serif;
-font-size: 12px;
-font-weight: 400;
-font-style: italic;
-line-height: 20px;
-/* text-align: left; */
-text-transform: uppercase;
-/* font-style: normal; */
-letter-spacing: 1.2px;
-line-height: normal;
+/* #section-one::before {
+	content: url("/assets/Layer_628.png");
+	/* background-image: url("/assets/Layer_628.png"); 
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 52%;
+	left: 16%;
+} */
+#nav-one {
+	height: 55px;
+}
+.logo-container {
+	display: flex;
+}
+.link {
+	color: #fefeff;
+	font-family: "Lato", sans-serif;
+	font-size: 12px;
+	font-weight: 900;
+	font-style: italic;
+	line-height: 20px;
+	text-transform: uppercase;
+	cursor: pointer;
+	letter-spacing: 2px;
+	line-height: normal;
+	z-index: 100;
+}
+.link:hover {
+	color: #fefeff;
+}
 
+.header-title {
+	width: 594px;
+	height: 230px;
+	font-family: "Bebas Neue", cursive;
+	font-size: 155px;
+	font-weight: 400;
+	line-height: 124.56px;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.losangeles {
+	color: #4d4d4d;
+	font-style: normal;
+	letter-spacing: 0.13px;
+	line-height: normal;
+}
+
+.mountains {
+	color: #414f6b;
+	letter-spacing: 0.14px;
+	line-height: normal;
+	/* position: absolute; */
+	top: 42%;
+	left: 16%;
+}
+
+/* SECTION-TWO */
+#nav-two {
+	height: 80px;
+}
+
+#section-two .link {
+	color: #414f6b;
+}
+
+#section-two-bg {
+	background-image: url("/assets/peak.png");
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.nav-title {
+	width: 100px;
+	height: 43px;
+	font-family: "Bebas Neue", cursive;
+	font-size: 21px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.header-container {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 800px;
+}
+.header {
+	display: flex;
+	width: 100px;
+}
+
+#section-two .header-title {
+	height: auto;
+	font-family: "Bebas Neue", cursive;
+	font-size: 155px;
+	font-weight: 400;
+	line-height: normal;
+	opacity: 0.5;
+	color: #414f6b;
+	text-align: left;
+	text-transform: uppercase;
+}
+.header-subtitle {
+	display: flex;
+	flex-direction: column;
 }
