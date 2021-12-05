@@ -7,6 +7,9 @@ font-family: 'Oswald', sans-serif; */
 	margin: 0;
 	padding: 0;
 }
+body {
+	overflow-y: visible;
+}
 
 nav {
 	display: flex;
@@ -95,18 +98,13 @@ nav {
 
 .losangeles {
 	color: #4d4d4d;
-	font-style: normal;
 	letter-spacing: 0.13px;
-	line-height: normal;
 }
 
 .mountains {
 	color: #414f6b;
 	letter-spacing: 0.14px;
-	line-height: normal;
-	/* position: absolute; */
-	top: 42%;
-	left: 16%;
+	margin-top: -13px;
 }
 
 /* SECTION-TWO */
@@ -126,8 +124,8 @@ nav {
 	background-size: cover;
 }
 .nav-title {
-	width: 100px;
-	height: 43px;
+	display: flex;
+	flex-direction: column;
 	font-family: "Bebas Neue", cursive;
 	font-size: 21px;
 	font-weight: 400;
@@ -146,7 +144,6 @@ nav {
 }
 
 .header-title {
-	height: auto;
 	font-family: "Bebas Neue", cursive;
 	font-size: 155px;
 	font-weight: 400;
@@ -180,7 +177,7 @@ nav {
 }
 
 #my-carousel {
-	position: static;
+	position: relative;
 	margin-top: 305px;
 	background: rgba(65, 79, 107, 0.8);
 }
@@ -205,22 +202,13 @@ nav {
 }
 /* SECTION THREE */
 .nav-three {
-	height: 150px;
 	width: 85% !important;
-}
-#section-three-bg {
-	background-image: url("/assets/mountain-2.png");
-	height: 100vh;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 .nav-bottom {
 	height: 50px;
 	background: #414f6b;
 }
-
 #section-three .text {
 	width: 650px;
 }
@@ -229,19 +217,79 @@ nav {
 	width: 80%;
 }
 
-li .nav-link {
+.nav-tabs {
+	border-bottom: none !important;
+}
+
+.nav-tabs li .tab-btn {
+	height: 50px;
+	background: transparent;
 	color: #b0b4be;
 	font-family: "Oswald", sans-serif;
 	font-size: 20px;
 	font-weight: 700;
 	text-align: left;
 	text-transform: uppercase;
+	border: transparent !important;
+	padding: 0 10px;
 }
-li .active {
-	color: #414f6b;
-	text-align: left;
-	text-decoration: underline;
+
+.nav-tabs .tab-btn.active {
+	color: #414f6b !important;
+	background-color: #b0b4be !important;
+	border-color: transparent !important;
+	text-decoration: underline !important;
 	text-transform: uppercase;
+}
+
+.nav-tabs .tab-btn:focus {
+	border-color: transparent !important;
+}
+.mountain {
+	display: none;
+}
+
+.mountain.active {
+	display: block;
+}
+#mountain-one {
+	background-image: url("/assets/mountain-2.png");
+	height: 80vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#mountain-two {
+	background-image: url("/assets/mountain-1.png");
+	height: 80vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+table {
+	width: 400px !important;
+	height: 220px !important;
+	background: #fff;
+}
+
+th {
+	color: #414f6b;
+	font-family: "Oswald", sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+td {
+	color: #414f6b;
+	font-family: "Lato", sans-serif;
+}
+
+tr {
+	padding-left: 5px;
 }
 
 footer {
@@ -249,6 +297,9 @@ footer {
 	top: 100%;
 	height: 100px;
 	background: #414f6b;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
 
 footer::after {
@@ -262,6 +313,10 @@ footer::after {
 	bottom: 0;
 }
 
+#section-three .losangeles,
+#section-three .mountains {
+	color: #b0b4be;
+}
 .copyright {
 	font-family: "Lato", sans-serif;
 	font-size: 12px;

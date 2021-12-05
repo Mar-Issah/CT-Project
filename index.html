@@ -27,6 +27,7 @@
             </div>
         </section>
          <section id="section-two">
+           <div>
               <nav id="nav-two">
                   <div class="logo-container">
                        <img class="logo" src="/assets/Logo.png"/>
@@ -78,9 +79,10 @@
   </div>
 </div>
  </div>
+ </div>
 </section>
 <section id="section-three">
-	<nav class="nav-three container">
+	<nav class="nav-three container p-0">
     <div class="pt-3">
       <div class="header">
         <h1 class="header-title">02&#46;</h1>
@@ -89,17 +91,46 @@
     </div>
     <p class="text">Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. </p>
   </nav>
-   <div class="nav-bottom" >
-     <ul class="nav container">
+   <div class="nav-bottom">
+     <ul class="nav container nav-tabs">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">mountain 1</a>
+    <button class="tab-btn active" data-id="mountain-one">mountain 1</button>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">mountain 2</a>
+  <li class="nav-item ms-4">
+    <button class="tab-btn" data-id="mountain-two">mountain 2</button>
   </li>
 </ul>
    </div>
-  <div id="section-three-bg">
+  <div id="mountain-one" class="mountain  active">
+    <div>
+      <table class="table  table-borderless">
+  <thead>
+    <tr>
+     <th>schedule</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="pb-0">25 Nov 2016</td>
+      <td class="pb-0">Vestibulum viverra</td>
+    </tr>
+     <tr>
+      <td class="pt-0">28 Nov 2016</td>
+      <td class="pt-0">Vestibulum viverra</td>
+    </tr>
+      <tr>
+      <td>18 Dec 2016</td>
+      <td>Vestibulum viverra</td>
+    </tr>
+      <tr>
+      <td>7 Nov 2017</td>
+      <td>Vestibulum viverra</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+  </div>
+    <div id="mountain-two"  class=" mountain"></div>
     <footer>
       <div class="logo-container">
         <img class="logo" src="/assets/Logo.png"/>
@@ -109,10 +140,21 @@
                 </div>
       </div>
       <p class="copyright">copyright 2016. all rights reserved.</p>
+      
     </footer>
-	</div>
+
 </section>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/index.js"></script>
+<script>
+$(document).ready(() =>{
+  $('ul li a').click(function(){
+     $('ul li a').removeClass('active');
+     $(this).addClass('active');
+});
+});
+</script>
 </body>
 </html>
