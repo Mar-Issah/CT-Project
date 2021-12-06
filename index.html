@@ -81,15 +81,13 @@
 </section>
 <section id="section-three">
 	<nav class="nav-three container">
-        <div class="header-container">
-                    <div class="header">
-                        <h1 class="header-title">01&#46;
-                           
-                        </h1>
-                        <h1 class="header-subtitle">climb</h1>
-                    </div>
-                    </div>
+    <div class="header-container">
+      <div class="header">
+        <h1 class="header-title">01&#46;</h1>
+        <h1 class="header-subtitle">climb</h1>
+        </div>
       </div>
+    </div>
     <p class="text">Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. </p>
   </nav>
    <nav class="nav-bottom">
@@ -102,7 +100,7 @@
   </li>
 </ul>
    </nav>
-  <div id="mountain-one" class="mountain  active">
+  <div id="mountain-one" class="mountain active">
     <div>
       <table class="table table-borderless">
         <thead>
@@ -140,7 +138,7 @@
                 <span class="mountains">mountains</span></h1>
                 </div>
       </div>
-      <p class="copyright">copyright 2016. all rights reserved.</p>
+      <p class="copyright ms-5">copyright 2016. all rights reserved.</p>
       
     </footer>
 </section>
@@ -155,7 +153,9 @@ $(document).ready(() =>{
      $(this).addClass('active');
 });
 
-getAccordion("#tabs",768);
+if ($(window).width() < 660) {
+  //  alert('Less than 960');
+}
 
 });
 </script>

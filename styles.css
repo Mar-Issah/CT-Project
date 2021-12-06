@@ -235,12 +235,14 @@ h1 {
 	}
 }
 /* SECTION THREE */
-.nav-bottom {
-	height: 50px;
-	background: #414f6b;
-}
 #section-three .text {
 	width: 75%;
+}
+
+@media (min-width: 720px) {
+	#section-three .text {
+		width: 55%;
+	}
 }
 
 #section-three .header-container {
@@ -255,6 +257,28 @@ h1 {
 .nav-bottom ul {
 	width: 80%;
 }
+
+.nav-bottom {
+	height: 100px;
+	background: #414f6b;
+}
+
+@media (min-width: 420px) {
+	.nav-bottom {
+		height: 50px;
+	}
+}
+
+/* .nav-tabs {
+	display: flex;
+	flex-direction: column;
+}
+
+@media (min-width: 420px) {
+	.nav-tabs {
+		flex-direction: row;
+	}
+} */
 
 .nav-tabs {
 	border-bottom: none !important;
