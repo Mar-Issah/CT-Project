@@ -259,33 +259,31 @@ h1 {
 }
 
 .nav-bottom {
-	height: 100px;
+	height: 50px;
 	background: #414f6b;
 }
 
+.show {
+	display: none;
+}
 @media (min-width: 420px) {
-	.nav-bottom {
-		height: 50px;
+	.hide {
+		display: none;
+	}
+
+	.show {
+		display: block;
 	}
 }
-
-/* .nav-tabs {
-	display: flex;
-	flex-direction: column;
-}
-
-@media (min-width: 420px) {
-	.nav-tabs {
-		flex-direction: row;
-	}
-} */
 
 .nav-tabs {
 	border-bottom: none !important;
 }
 
-.nav-tabs li .tab-btn {
+/* .nav-tabs li  */
+.tab-btn {
 	height: 50px;
+	width: 100%;
 	background: transparent;
 	color: #b0b4be;
 	font-family: "Oswald", sans-serif;
@@ -295,9 +293,10 @@ h1 {
 	text-transform: uppercase;
 	border: transparent !important;
 	padding: 0 10px;
+	background: #414f6b;
 }
-
-.nav-tabs .tab-btn.active {
+/* .nav-tabs */
+.tab-btn.active {
 	color: #414f6b !important;
 	background-color: #b0b4be !important;
 	border-color: transparent !important;
