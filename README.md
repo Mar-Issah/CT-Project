@@ -1,2 +1,0 @@
-## SINGLE PAGE WEB APP
-

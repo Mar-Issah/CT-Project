@@ -44,6 +44,10 @@ h1 {
 #nav-one {
 	height: 55px;
 }
+
+#section-one .nav-links {
+	z-index: 100;
+}
 .logo-container {
 	display: flex;
 }
@@ -58,7 +62,6 @@ h1 {
 	cursor: pointer;
 	letter-spacing: 2px;
 	line-height: normal;
-	z-index: 100;
 }
 .link:hover {
 	color: #fefeff;
@@ -70,7 +73,10 @@ h1 {
 	font-size: 72px;
 	text-transform: uppercase;
 	position: relative;
-	margin: 200px auto;
+	margin: 220px auto;
+	opacity: 1;
+	line-height: 60.56px;
+	letter-spacing: 2px;
 }
 
 .losangeles {
@@ -81,6 +87,7 @@ h1 {
 	color: #414f6b;
 	margin-top: -10px;
 	letter-spacing: 0.7px;
+	opacity: 1;
 }
 
 #section-one .mountains {
@@ -157,23 +164,29 @@ h1 {
 }
 
 @media (min-width: 720px) {
-	#section-one .header-title {
+	#section-two .header-title {
 		font-size: 155px;
 	}
 
 	#section-two .header-subtitle {
-		margin-top: 40px;
+		margin-top: 90px;
 	}
 }
 .header-subtitle {
 	position: relative;
-	left: -25%;
-	margin-top: 50px;
+	left: -17%;
+	margin-top: 48px;
 	color: #414f6b;
 	font-family: "Oswald", sans-serif;
 	font-size: 32px;
 	text-align: left;
 	text-transform: uppercase;
+}
+
+@media (min-width: 720px) {
+	.header-subtitle {
+		left: -24%;
+	}
 }
 .text {
 	color: #000000;
@@ -206,12 +219,15 @@ h1 {
 }
 .carousel-inner {
 	padding: 30px 0;
-	/* width: 76% !important; */
 }
 
-/* .carousel-item .active {
-	margin: 50% 50%;
+/* .carousel-inner .active {
+	width: 70%;
 } */
+
+.carousel-item {
+	/* float: none; */
+}
 
 .carousel-image {
 	width: 100px;
@@ -242,6 +258,10 @@ h1 {
 @media (min-width: 720px) {
 	#section-three .text {
 		width: 55%;
+	}
+
+	#section-three .header-subtitle {
+		left: -20%;
 	}
 }
 
@@ -280,7 +300,6 @@ h1 {
 	border-bottom: none !important;
 }
 
-/* .nav-tabs li  */
 .tab-btn {
 	height: 50px;
 	width: 100%;
@@ -295,7 +314,7 @@ h1 {
 	padding: 0 10px;
 	background: #414f6b;
 }
-/* .nav-tabs */
+
 .tab-btn.active {
 	color: #414f6b !important;
 	background-color: #b0b4be !important;
